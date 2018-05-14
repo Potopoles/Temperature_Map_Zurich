@@ -96,7 +96,7 @@ for hash in hashes:
 print(model.keys())
 print(model['20_25'])
 quit()
-plot_map(predictions,hashes)
+plot_map(grid,predictions)
 
 ## GET LIMITS
 #zlim0 = np.min(predictions)

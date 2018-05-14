@@ -14,7 +14,7 @@ import numpy as np
 
 
 
-def plot_map(values,hashes):
+def plot_map(grid,values,hashes):
     """
     Converts a time series (vector with hourly mean values)) into
     diurnal matrix (2 D matrix (days,hours of the day))

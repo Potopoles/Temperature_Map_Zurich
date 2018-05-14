@@ -19,12 +19,13 @@ minx = 681000
 maxx = 687000
 miny = 249000
 maxy = 255000
-min_nEntries = [25,30,50]
+min_nEntries = [25,50]
 i_plot = 1
 
 
 
 input = pickle.load(open(inp_file, 'rb'))
+
 
 # SPATIAL SELECTION 
 print('spatial selection')
@@ -42,6 +43,17 @@ ys = np.arange(miny,maxy+1,dx)
 X,Y = np.meshgrid(xs,ys)
 nx = len(xs)
 ny = len(ys)
+
+# SPATIAL GRID
+grid = {}
+grid['xs'] = xs
+grid['ys'] = ys
+grid['X'] = X
+grid['Y'] = Y
+grid['nx'] = nx
+grid['ny'] = ny
+grid['hashes'] = []
+grid['data']
 
 vals = np.zeros(np.shape(X))
 times = np.zeros(np.shape(X))
