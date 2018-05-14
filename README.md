@@ -1,1 +1,1 @@
-# Temperture_Map_Zurich
+# Temperature_Map_Zurich
