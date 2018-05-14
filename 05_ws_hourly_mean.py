@@ -12,7 +12,7 @@ import TimeSelector as TimeSelector
 import pickle
 
 
-ws_path = '../../../Dropbox/aWetter/RP_Upload/ws.nc'
+ws_path = '../../../../Dropbox/aWetter/RP_Upload/ws.nc'
 out_file = '03_data/00_ws_hourly.pkl'
 
 # LOAD WEATHER STATION DATA

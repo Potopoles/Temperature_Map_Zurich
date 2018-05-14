@@ -9,9 +9,9 @@ import pickle
 from scipy import interpolate
 
 
-inp_file = '03_data/01_sensor_data.pkl'
-out_file = '03_data/02_spatial_grid.pkl'
-ws_path = '../../../Dropbox/aWetter/RP_Upload/ws.nc'
+inp_file = '../03_data/01_sensor_data.pkl'
+out_file = '../03_data/02_spatial_grid.pkl'
+ws_path = '../../../../Dropbox/aWetter/RP_Upload/ws.nc'
 
 dx = 100
 wx2 = 100

@@ -28,9 +28,9 @@ varNames = ['T', 'wind', 'hour', 'yday']
 orders = [[3], [3], [3], [2,3]]
 n_predictors = 5
 
-inp_file = '03_data/02_spatial_grid.pkl'
-out_file = '03_data/03_trained.pkl'
-ws_hrly_file = '03_data/00_ws_hourly.pkl'
+inp_file = '../03_data/02_spatial_grid.pkl'
+out_file = '../03_data/03_trained.pkl'
+ws_hrly_file = '../03_data/00_ws_hourly.pkl'
 min_nEntries = 25
 
 # LOAD WS DATA

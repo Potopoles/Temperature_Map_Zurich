@@ -9,11 +9,15 @@ import pickle
 from scipy import interpolate
 
 
-inp_file = '03_data/02_spatial_grid.pkl'
-ws_path = '../../../Dropbox/aWetter/RP_Upload/ws.nc'
+inp_file = '../03_data/02_spatial_grid.pkl'
+ws_path = '../../../../Dropbox/aWetter/RP_Upload/ws.nc'
 
 dx = 100
 wx2 = 100
+#minx = 681000
+#maxx = 687000
+#miny = 249000
+#maxy = 255000
 minx = 681000
 maxx = 687000
 miny = 249000

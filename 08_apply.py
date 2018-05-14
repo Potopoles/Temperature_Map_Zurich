@@ -16,12 +16,12 @@ import pickle
 import time
 import os
 
-inp_file = '03_data/03_trained.pkl'
-ws_hrly_file = '03_data/00_ws_hourly.pkl'
-maps_path = 'maps/lowQuality'
+inp_file = '../03_data/03_trained.pkl'
+ws_hrly_file = '../03_data/00_ws_hourly.pkl'
+maps_path = '../maps/lowQuality'
 sel_dt_str = '2018-04-14 15'
 i_save_fig = 1
-img_out_path = 'test_images/'+sel_dt_str+'.jpg'
+img_out_path = '../test_images/'+sel_dt_str+'.jpg'
 
 sel_dt = datetime.strptime(sel_dt_str, '%Y-%m-%d %H')
 

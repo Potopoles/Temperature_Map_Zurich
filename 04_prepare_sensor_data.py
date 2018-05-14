@@ -13,8 +13,8 @@ import matplotlib.pyplot as plt
 
 input = {'chx':[],'chy':[],'T':[],'dt':[]}
 
-input_folder = 'thermoloc_out'
-archive_folder = 'thermoloc_archive'
+input_folder = '../thermoloc_out'
+archive_folder = '../thermoloc_archive'
 out_file = '03_data/01_sensor_data.pkl'
 ws_path = '../../../Dropbox/aWetter/RP_Upload/ws.nc'
 cet_tz = tz.gettz('Europe/Berlin')
@@ -80,15 +80,18 @@ for filename in files:
     input['T'].extend(list(temp)) 
     input['dt'].extend(list(dt_cet)) 
 
-plt.plot(input['chx'],input['chy'])
-print('Proceed..?')
-plt.show()
-
-plt.plot(input['dt'],input['T'])
-print('Proceed..?')
-plt.show()
 
 if len(input['chx']) > 0:
+    
+    ## PLOTS FOR FIRST IMPRESSION
+    plt.plot(input['chx'],input['chy'])
+    print('Proceed..?')
+    plt.show()
+
+    plt.plot(input['dt'],input['T'])
+    print('Proceed..?')
+    plt.show()
+
     ## INTERPOLATE WS TEMPERATURE
     print('interpolate ws temperature')
     chx = input['chx']
@@ -105,7 +108,7 @@ if len(input['chx']) > 0:
     print('entries: '+str(datetime.fromtimestamp(np.max(tstmp))))
     print('ws:      '+str(datetime.fromtimestamp(np.max(ws_tstmp))))
 
-    # ACTUALISE WS DB IF NECESSARY
+    ## UPDATE WS DB IF NECESSARY
     if np.max(tstmp) > np.max(ws_tstmp):
         ncf.close()
         print('COPY NEW WS DB')
